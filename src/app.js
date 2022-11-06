@@ -21,11 +21,11 @@ window.onload = function() {
     let rand2 = Math.floor(Math.random() * what.length);
     let rand3 = Math.floor(Math.random() * when.length);
 
-    console.log(who[rand1] + " " + what[rand2] + " " + when[rand3]);
+    return who[rand1] + " " + what[rand2] + " " + when[rand3];
   }
-
-  function onLoad() {
-    var excusa = document.getElementById("excuse");
-    excusa.innerHTML = excuseGenerator(who, what, when);
-  }
+  document.getElementById("excuse").innerHTML = excuseGenerator(
+    who,
+    what,
+    when
+  );
 };
